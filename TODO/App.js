@@ -106,7 +106,7 @@ export default function App() {
         </View>
       </Modal>
       <View style={styles.task_container}>
-        <Text style={styles.task_title}>Today's task</Text>
+        <Text style={styles.task_title}>task</Text>
         <ScrollView>
           <View style={styles.items}>
             {taskItems.map(item => {
