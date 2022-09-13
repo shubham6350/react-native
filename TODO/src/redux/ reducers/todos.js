@@ -1,4 +1,4 @@
-// let temp = [];
+var temp = [];
 const todos = (state = [], action) => {
   switch (action.type) {
     case 'ADD_TODO':
@@ -25,17 +25,23 @@ const todos = (state = [], action) => {
           : todo,
       );
     case 'ACTIVE_TODOS':
-      var temp = state;
-      const newtemp = temp.filter(todo => !todo.completed);
-      return newtemp;
+      temp = state;
+      return state.filter(todo => !todo.completed);
     default:
       return state;
     case 'completed_TODOS':
-      state = state.filter(todo => todo.completed);
+      if (temp.length === 0) {
+        return state.filter(todo => todo.completed);
+      } else {
+        state = temp;
+        return state.filter(todo => todo.completed);
+      }
     case 'All_TODOS':
-      return state;
+      if (temp.length === 0) return state;
+      else return temp;
+
     case 'DELETE_All_TODOS':
-      return (state = []);
+      return (state = []), (temp = []);
   }
 };
 

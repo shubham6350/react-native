@@ -2,41 +2,39 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: '#E8EAED',
+
+    height: '100%',
   },
   task_container: {
-    paddingTop: 80,
-    paddingHorizontal: 20,
+    justifyContent: 'space-around',
+    height: '90%',
+  },
+  title: {
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   task_title: {
     fontSize: 24,
     fontWeight: 'bold',
   },
-  items: {
-    marginTop: 30,
-    height: 550,
-  },
   Taskwrapper: {
-    position: 'absolute',
-    bottom: 60,
     width: '100%',
     flexDirection: 'row',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
     alignItems: 'center',
   },
   textInput: {
-    paddingVertical: 15,
-    paddingHorizontal: 15,
+    padding: 10,
     backgroundColor: '#fff',
     borderRadius: 60,
     borderColor: '#c0c0c0',
     borderWidth: 1,
-    width: 250,
+    width: '80%',
   },
   Addtext: {
-    width: 60,
-    height: 60,
+    width: 50,
+    height: 50,
     backgroundColor: '#2596be',
     borderRadius: 60,
     justifyContent: 'center',
@@ -84,7 +82,8 @@ const styles = StyleSheet.create({
     color: 'white',
   },
   button_header: {
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
+    alignItems: 'center',
     flexDirection: 'row',
   },
   circ: {
@@ -99,11 +98,22 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
 
+  list1: {
+    padding: 20,
+    height: '90%',
+    borderRadius: 5,
+    width: '100%',
+  },
+  inputtext_button: {
+    justifyContent: 'flex-end',
+    padding: 5,
+  },
+
   //task.js styling
 
   container_item: {
     backgroundColor: '#fff',
-    padding: 20,
+    padding: 10,
     borderRadius: 10,
     flexDirection: 'row',
     alignItems: 'center',
@@ -163,6 +173,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  list_2: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    padding: 5,
+  },
+  text_style: {
+    width: '70%',
   },
 });
 export default styles;
