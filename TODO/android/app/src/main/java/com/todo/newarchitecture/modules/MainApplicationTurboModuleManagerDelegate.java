@@ -1,4 +1,4 @@
-package com.todo.newarchitecture.modules;
+package com.todofire.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;
